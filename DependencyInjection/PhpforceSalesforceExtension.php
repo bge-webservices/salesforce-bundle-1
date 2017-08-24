@@ -36,6 +36,4 @@ class PhpforceSalesforceExtension extends Extension
 //            $builder->addMethodCall('withLog', array(new Reference('phpforce_salesforce.logger')));
         }
     }
-
-
 }

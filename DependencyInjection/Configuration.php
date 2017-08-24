@@ -27,6 +27,12 @@ class Configuration implements ConfigurationInterface
                         ->scalarNode('password')->isRequired()->end()
                         ->scalarNode('token')->isRequired()->end()
                         ->scalarNode('logging')->defaultValue('%kernel.debug%')->end()
+                        ->arrayNode('options')
+                            ->children()
+                                ->scalarNode('proxy_host')->end()
+                                ->scalarNode('proxy_port')->end()
+                            ->end()
+                        ->end()
                     ->end()
                 ->end()
             ->end();
