@@ -2,7 +2,11 @@
     "name": "phpforce/salesforce-bundle",
     "type": "symfony-bundle",
     "description": "A Symfony2 bundle for the PHPForce Salesforce library",
-    "keywords": [ "salesforce", "crm", "soap" ],
+    "keywords": [
+        "salesforce",
+        "crm",
+        "soap"
+    ],
     "homepage": "https://github.com/phpforce/salesforce-bundle",
     "license": "MIT",
     "authors": [
@@ -12,9 +16,15 @@
             "homepage": "http://ddeboer.nl"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bge-webservices/soap-client"
+        }
+    ],
     "require": {
         "php": ">=5.3.0",
-        "phpforce/soap-client": "*"
+        "phpforce/soap-client": "dev-master"
     },
     "suggest": {
         "guzzle/http": "For fetching the latest WSDL from Salesforce"
